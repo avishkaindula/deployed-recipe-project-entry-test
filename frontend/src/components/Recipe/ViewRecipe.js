@@ -11,7 +11,7 @@ const ViewRecipe = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`http://localhost:5000/recipes/${id}`)
+        .get(`https://recipe-app-entry-test.onrender.com/recipes/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.recipe));
     };

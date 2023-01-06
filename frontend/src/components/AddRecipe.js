@@ -24,7 +24,7 @@ const AddRecipe = () => {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/recipes", {
+      .post("https://recipe-app-entry-test.onrender.com/recipes", {
         name: String(inputs.name),
         ingredients: String(inputs.ingredients),
         description: String(inputs.description),

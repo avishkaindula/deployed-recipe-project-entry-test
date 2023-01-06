@@ -13,7 +13,7 @@ const Recipe = (props) => {
     let result = window.confirm("Are you sure you want to delete the recipe?");
     if (result) {
       await axios
-        .delete(`http://localhost:5000/recipes/${_id}`)
+        .delete(`https://recipe-app-entry-test.onrender.com/recipes/${_id}`)
         .then((res) => res.data)
         .then(() => history("/"))
         .then(() => window.location.reload(false));

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Recipe.css";
 import axios from "axios";
 import Recipe from "./Recipe";
-const URL = "http://localhost:5000/recipes";
+const URL = "https://recipe-app-entry-test.onrender.com/recipes";
 
 // This holds the recipes list
 
