@@ -9,7 +9,7 @@ const getAllRecipes = async (req, res, next) => {
   }
 
   if (!recipes) {
-    return res.status(404).json({ message: "No products found" });
+    return res.status(404).json({ message: "No recipes found" });
   }
   return res.status(200).json({ recipes });
 };
@@ -23,7 +23,7 @@ const getById = async (req, res, next) => {
     console.log(err);
   }
   if (!recipe) {
-    return res.status(404).json({ message: "No Book found" });
+    return res.status(404).json({ message: "No Recipe found" });
   }
   return res.status(200).json({ recipe });
 };
@@ -95,7 +95,7 @@ const deleteRecipe = async (req, res, next) => {
   if (!recipe) {
     return res.status(404).json({ message: "Unable To Delete By this ID" });
   }
-  return res.status(200).json({ message: "Product Successfully Deleted" });
+  return res.status(200).json({ message: "Recipe Successfully Deleted" });
 };
 
 exports.getAllRecipes = getAllRecipes;
